@@ -1,8 +1,7 @@
-def firstFactorial(num):
+def factorial(fact):
+    for i in range(1,fact):
+        fact = fact * i
+    return fact
 
-  for i in range(1,num):
-    num *= i
-  return num
-
-# keep this function call here
-print(firstFactorial(int(input())))
+fact = int(input("Enter number: "))
+print(factorial(fact))
